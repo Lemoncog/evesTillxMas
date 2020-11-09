@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Example</title>
+        <title>How many Eves?</title>
     </head>
     <body>
-        <p>Merry Christmas</p>
+        <div id='evesLeft'></div>
         <div id='placeholder'></div>
     </body>
 
@@ -25,10 +25,12 @@
             node.src = 'eve.jpg'
             node.width = "120"
             node.height = "120"
-            var textnode = document.createTextNode("Water");         // Create a text node
-            node.appendChild(textnode);                              // Append the text to <li>
             document.getElementById("placeholder").appendChild(node); 
         } 
+        var textView = document.createElement("p"); 
+        var text = document.createTextNode('There are ' + daysTill + ' eves left until christmas');
+        textView.appendChild(text);
+        document.getElementById("evesLeft").appendChild(textView); 
 
     </script>
 </html>
