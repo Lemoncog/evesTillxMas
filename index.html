@@ -5,7 +5,8 @@
     </head>
     <body>
         <div id='evesLeft'></div>
-        <div id='placeholder'></div>
+        <div id='placeholder'></img</div>
+        
     </body>
 
     <script>
@@ -27,6 +28,13 @@
             node.height = "120"
             document.getElementById("placeholder").appendChild(node); 
         } 
+
+        var node = document.createElement("img");                 // Create a <li> node
+        node.src = 'christmas.png'
+        node.width = "120"
+        node.height = "120"
+        document.getElementById("placeholder").appendChild(node); 
+
         var textView = document.createElement("p"); 
         var text = document.createTextNode('There are ' + daysTill + ' eves left until christmas');
         textView.appendChild(text);
